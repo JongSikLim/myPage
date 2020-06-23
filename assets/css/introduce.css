@@ -1,9 +1,57 @@
-.intro-container{
-    
+.intro-container{    
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.intro-container .title-text-area{
 
+.intro-container .navigation-button-area{
+    display: flex;
+    justify-content: flex-end;    
+    position: fixed;
+    z-index: 10;
+}
+.navigation-button-area .navigation-button{    
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.intro-container .sheet-area{    
+    /* height: 100%; */
+    z-index: 1;
+    position: relative;
+}
+
+.intro-container .button-area{
+
+}
+
+.intro-container .button-area .btn-download{
+    padding: 20px 40px;
+    border : 1px solid #00bbff;
+    color : #00bbff;
+    font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
+}
+
+.intro-container .button-area .btn-download:hover{
+    padding: 20px 40px;    
+    color : #fff;
+    font-size: 20px;    
+    background: #00bbff;
+}
+
+
+
+
+
+
+.intro-container .title-text-area{
+    padding-top: 130px;
 }
 
 .intro-container .title-text-area .first-line{
@@ -23,8 +71,18 @@
 }
 
 .intro-container .introduce-text-area{
-
+    padding-top: 100px;
 }
+
+
+.intro-container .pride-text-area{
+    padding-top: 50px;
+}
+
+.intro-container .button-area{
+    padding-top: 50px;
+}
+
 
 .intro-container .introduce-text-area .history-area{
 
@@ -48,5 +106,6 @@
 .intro-container .reward-area{
 
 }
+
 
 

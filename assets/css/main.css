@@ -6,6 +6,7 @@
 .container{
     background-image: url("../img/background.png");
     height: 100vh;
+    overflow-y: hidden;
     font-family: 'Raleway','S-CoreDream-4Regular' , sans-serif;
     color:#ffffff;
 }
@@ -13,7 +14,8 @@
 
 .content-area{    
     display: flex;
-    justify-content: center;            
+    justify-content: center;    
+     
 }
 
 .content-area div{
@@ -28,7 +30,7 @@
 
 .header-content-area{    
     width: 1200px;
-    height: 80px;    
+    height: 60px;     
     display: flex;    
     align-items: center;
     justify-content: space-between;
@@ -42,7 +44,7 @@
 }
 
 .header-area .menu-text{    
-    font-size: 20px;
+    font-size: 16px;
     list-style-type: none;
 }
 
@@ -53,6 +55,15 @@
     color: #ffffff;
     padding-left: 40px;
     letter-spacing: 0px;
+}
+
+.menu-area nav .menu-list li a:hover{
+    color: #00bbff;
+}
+
+.menu-area nav .menu-list li a:active span.menu-text-field{
+    color: #00bbff;
+    border-bottom : 2px solid #00bbff;
 }
 
 .footer-area{
