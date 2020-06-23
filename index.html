@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/introduce.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+</head>
+<body ng-app="Portfolio">
+    <div class="container" ng-controller="index">    
+        <div ng-include src="'views/header.html'"></div>
+        <div class="content-area">
+            <div ui-view></div>
+            <!-- 라우팅 적용 -->
+
+        </div>
+        <div ng-include src="'views/footer.html'"></div>
+    </div>
+</body>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/router.js"></script>
+    
+    <script src="app/app.module.js"></script>
+    <script src="app/app.route.js"></script>
+
+
+    <script src="app/controller/index.controller.js"></script>
+    <script src="app/controller/introduce.controller.js"></script>
+    <script src="app/controller/portfolio.controller.js"></script>
+    <script src="app/controller/blog.controller.js"></script>
+    <script src="app/controller/header.controller.js"></script>
+    <script src="app/controller/footer.controller.js"></script>
+
+</html>

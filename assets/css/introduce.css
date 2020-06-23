@@ -1,0 +1,52 @@
+.intro-container{
+    
+}
+
+.intro-container .title-text-area{
+
+}
+
+.intro-container .title-text-area .first-line{
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 42px;
+    display: block;
+}
+
+.intro-container .title-text-area .second-line{
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 68px;
+    display: block;    
+}
+
+.intro-container .title-text-area .second-line .name{
+    font-family: 'S-CoreDream-5Medium'; 
+}
+
+.intro-container .introduce-text-area{
+
+}
+
+.intro-container .introduce-text-area .history-area{
+
+}
+
+.intro-container .introduce-text-area .history-area .title{
+    font-family: 'S-CoreDream-5Medium'; 
+    font-size: 20px;
+}
+
+.intro-container .introduce-text-area .history-area .content{
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 20px;
+}
+
+.intro-container .introduce-text-area .pride-text-area{
+    font-family: 'S-CoreDream-1Thin';    
+    font-size : 18px;
+}
+
+.intro-container .reward-area{
+
+}
+
+
