@@ -96,11 +96,4 @@ function scrollDown(){
     let contentAreaHeight = windowHeight - navHeight;
 
     container.scrollTo(0,contentAreaHeight);    
-    // container.style.transform  = `translate(0, ${contentAreaHeight})`;
-
-    let sheet1 = document.querySelector(`#sheet-1`);
-    let sheet2 = document.querySelector(`#sheet-2`);
-    
-    // sheet1.style.transform  = `translate(0, -${contentAreaHeight})`
-    // sheet2.style.transform  = `translate(0, 0)`
 }
