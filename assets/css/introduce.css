@@ -1,158 +1,99 @@
-.intro-container{    
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+.introduce-area{
+    width: 100%;    
 }
 
-
-.intro-container .navigation-button-area{
+.welcome-flex-box{
     display: flex;
-    justify-content: flex-end;    
-    position: fixed;
-    z-index: 10;
-}
-.navigation-button-area .navigation-button{    
-    display: block;
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
+    width: 100%;    
+    background: rgb(36,38,51);
+    justify-content: center;
 }
 
-.intro-container .sheet-area{    
-    /* height: 100%; */
-    z-index: 1;
-    position: relative;
-}
-
-.intro-container #sheet-1  {    
+.welcome-sheet-area{
+    width: 1270px;
+    height: 485px;
     
 }
 
-.intro-container .button-area{
-
-}
-
-.intro-container .button-area .btn-download{
-    padding: 20px 40px;
-    border : 1px solid #3192ff;
-    color : #3192ff;
-    font-size: 20px;
-    font-family: 'S-CoreDream-4Regular';
-}
-
-.intro-container .button-area .btn-download:hover{
-    padding: 20px 40px;    
-    color : #fff;
-    font-size: 20px;    
-    background: #3192ff;
-}
-
-
-
-
-
-
-.intro-container .title-text-area{
-    padding-top: 130px;
-}
-
-.intro-container .title-text-area .first-line{
-    font-family: 'S-CoreDream-1Thin';
-    font-size: 42px;
-    display: block;
-}
-
-.intro-container .title-text-area .second-line{
-    font-family: 'S-CoreDream-1Thin';
-    font-size: 68px;
-    display: block;    
-}
-
-.intro-container .title-text-area .second-line .name{
-    font-family: 'S-CoreDream-5Medium'; 
-}
-
-.intro-container .introduce-text-area{
-    padding-top: 100px;
-}
-
-
-.intro-container .pride-text-area{
-    padding-top: 50px;
-}
-
-.intro-container .button-area{
-    padding-top: 50px;
-}
-
-
-.intro-container .introduce-text-area .history-area{
-
-}
-
-.intro-container .introduce-text-area .history-area .title{
-    font-family: 'S-CoreDream-5Medium'; 
-    font-size: 20px;
-}
-
-.intro-container .introduce-text-area .history-area .content{
-    font-family: 'S-CoreDream-1Thin';
-    font-size: 20px;
-}
-
-.intro-container .introduce-text-area .pride-text-area{
-    font-family: 'S-CoreDream-1Thin';    
-    font-size : 18px;
-}
-
-.intro-container .reward-area{
-
-}
-
-.intro-container .reward-title-area{
-    padding-top: 130px;
-    margin-bottom: 84px;
-}
-
-.intro-container .reward-title-area .reward-title-text{
-    font-family: 'S-CoreDream-1Thin';
-    font-size: 68px;    
-}
-
-.intro-container .reward-area .external-area, .intro-container .reward-area .internal-area{
-    width: 100%;
-}
-
-
-.intro-container .reward-area .reward-circle-display-area{
-    display: -webkit-inline-box;
-}
-.intro-container .reward-area .reward-circle-area{        
+.greeting-text{
     display: flex;
-    width: 120px;
-    height: 120px;
-    border: 1px solid #3192ff;
+    font-size: 56px;
+}
+
+.idea-text{
+    display: flex;
+    font-size: 28px;
+}
+
+.skill-flex-box{
+    display: flex;
+    width: 100%;    
+    background: rgb(50,52,69);
+    justify-content: center;
+}
+
+.skill-sheet-area{
+    width: 1270px;
+    height: 1300px;
+    padding: 100px 0;
+}
+
+.skill-sheet-area .subject-text{    
+    font-size: 56px;
+}
+
+.skill-sheet-area .subject-text .eng-text{
+    font-size: 28px;
+}
+
+.skill-box{
+    display: flex;
+    margin-top: 50px;
+}
+
+.skill-box .group-area{    
+    flex-grow: 2;    
+    flex-basis: 295px;
+}
+
+.skill-box .element-area{
+    display: flex;
+    flex-wrap: wrap;    
+    flex-grow: 6;
+    flex-basis: Calc((458*2px) + 30px);
+}
+
+.skill-box .group-area .img-area{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
-    margin-right: 50px;
-    margin-bottom: 40px;
+    height: 510px;
 }
 
-.intro-container .reward-area .reward-list-area{
+.skill-box .group-area .caption-area{
+    display: block;
+    font-size: 28px;
+}
+
+.lang-item-box{
+    width: 458px;
+    height: 150px;
+    display: flex;
+}
+
+.lang-item-box .logo-area{
 
 }
-.intro-container .reward-area .reward-list-area li{           
-    font-family: 'S-CoreDream-1Thin';
-    font-size: 20px;     
-}
-.intro-container .reward-area .reward-circle{
-    
-    font-family: 'S-CoreDream-5Medium'; 
-    font-size: 24px;
-    color :#3192ff;
 
+.lang-item-box .text-area .lang-name{
+    font-family: 'NG-Reg';    
+    font-size: 16px;
+    color: rgb(154, 167, 255);
 }
+
+.lang-item-box .text-area .lang-detail{
+    font-size: 16px;
+}
+
 

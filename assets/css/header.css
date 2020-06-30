@@ -1,0 +1,23 @@
+.header-area{
+    display: flex;
+    justify-content: center;    
+    background: rgb(50,52,69);
+}
+.header-flex-container{
+    display: flex;
+    width: 1270px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-flex-container .menu-area{
+    display: flex;
+}
+
+.header-flex-container .menu-area .menu{
+    font-size: 16px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+

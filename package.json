@@ -1,0 +1,28 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "description": "jsim-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch" : "node-sass --watch app/sass/ --output assets/css/complie/ --output-style compressed" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JongSikLim/myPage.git"
+  },
+  "keywords": [
+    "portfolio",
+    "jsim",
+    "javascript"
+  ],
+  "author": "jsim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JongSikLim/myPage/issues"
+  },
+  "homepage": "https://github.com/JongSikLim/myPage#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

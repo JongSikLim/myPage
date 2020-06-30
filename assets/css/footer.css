@@ -1,0 +1,9 @@
+.footer-area{
+    background-color: #252526;
+    display: flex;    
+    justify-content: center;   
+}
+
+.footer-content-area{
+    width: 1200px;
+}

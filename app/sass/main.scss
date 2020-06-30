@@ -1,0 +1,29 @@
+$gutter : 1.5625vw;
+$max-width : 100vw;
+$col : 6.901041666666667vw;
+$content-width : ($col*8) + ($gutter*7);
+
+@font-face{
+    font-family: 'NG-Light';
+    src: url('../../font/NanumGothicLight.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'NG-Reg';
+    src: url('../../font/NanumGothic.ttf') format('truetype');
+}
+
+.container{    
+    width: $max-width;
+    color:#fff;
+    .content-area{
+        width: $max-width;
+    }
+}
+
+.ngl{
+    font-family: 'NG-Light';
+}
+
+.ngr{
+    font-family: 'NG-Reg';
+}

@@ -1,16 +1,11 @@
-<div class="header-area" ng-controller="header">
-    <div class="header-content-area">
+<div class="header-area">
+    <div class="header-flex-container">
         <div class="logo-area">
-            <span class="logo-text">JSIM</span>
+            <img src="../assets/img/logo.png" class="logo-img">
         </div>
-        <div class="menu-area">
-            <nav>
-                <ul class="menu-list">
-                    <li class="menu-text"><a ng-class="{active: state == 'PROFILE'}" ng-click="changeState('PROFILE')" ><span class="menu-text-field">PROFILE</span></a></li>
-                    <li class="menu-text"><a ng-class="{active: state == 'PORTFOLIO'}" ng-click="changeState('PORTFOLIO')" ><span class="menu-text-field">PORTFOLIO</span></a></li>
-                    <li class="menu-text"><a ng-class="{active: state == 'BLOG'}" ng-click="changeState('BLOG')" ><span class="menu-text-field">BLOG</span></a></li>
-                </ul>
-            </nav>
+        <div class="menu-area ngl">
+            <div class="menu">소개</div>
+            <div class="menu">프로젝트</div>
         </div>
     </div>
 </div>

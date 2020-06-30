@@ -6,31 +6,37 @@
     <title>Hello World!</title>
 
     <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!-- css -> scss 변경 -->
+    <!-- <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/introduce.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/blog.css"> -->
 
+    
+    <link rel="stylesheet" href="assets/css/complie/header.css">
+    <link rel="stylesheet" href="assets/css/complie/footer.css">
+    <link rel="stylesheet" href="assets/css/complie/main.css">
+    <link rel="stylesheet" href="assets/css/complie/introduce.css">
+    <link rel="stylesheet" href="assets/css/complie/portfolio.css">
+    <link rel="stylesheet" href="assets/css/complie/blog.css">
 </head>
 <body ng-app="Portfolio">
     <div class="container" ng-controller="index">
-        <div class="container-face-image-area"></div>
-        <div class="container-swipe-image-area"></div>
-        <div ng-include src="'views/header.html'"></div>
+        <div ng-include src="'views/header.html'"></div>        
         <div class="content-area">
-            <div ui-view></div>
-            <!-- 라우팅 적용 -->
-
+            <div ui-view class="content-router"></div>
         </div>
         <div ng-include src="'views/footer.html'"></div>
     </div>
-</body>
+
     <script src="assets/js/angular.js"></script>
     <script src="assets/js/router.js"></script>
     
     <script src="app/app.module.js"></script>
     <script src="app/app.route.js"></script>
-
 
     <script src="app/controller/index.controller.js"></script>
     <script src="app/controller/introduce.controller.js"></script>
@@ -38,6 +44,6 @@
     <script src="app/controller/blog.controller.js"></script>
     <script src="app/controller/header.controller.js"></script>
     <script src="app/controller/footer.controller.js"></script>
-
+</body>
 </html>
 

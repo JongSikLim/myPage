@@ -1,0 +1,117 @@
+$gutter : 1.5625vw;
+$max-width : 100vw;
+$col : 6.90104166666667vw;
+$content-width : ($col*8) + ($gutter*7);
+
+.introduce-area{
+    width: $max-width;    
+    hr.line{
+        display: flex;
+        width: $max-width;
+    }
+    .welcome-flex-box{
+        display: flex;
+        width: $max-width;    
+        background: rgb(36,38,51);
+        justify-content: center;
+        
+        .welcome-sheet-area{
+            width: $content-width;
+            height: 485px;
+            
+            .greeting-text{
+                display: flex;
+                font-size: 56px;
+            }
+            
+            .idea-text{
+                display: flex;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .skill-flex-box{
+        display: flex;
+        width: $max-width;    
+        background: rgb(50,52,69);
+        justify-content: center;
+
+        .skill-sheet-area{
+            width: $content-width;
+            padding: 100px 0;
+
+            .subject-text{    
+                font-size: 56px;
+                margin-bottom: 50px;
+                .eng-text{
+                    font-size: 28px;
+                }
+            }            
+            .skill-box{ 
+                display: flex;
+                
+
+                .group-area{    
+                    flex-basis: ($col*2) + $gutter;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    
+                    .img-area{
+                        display: flex;
+                        flex-direction: column;
+                              
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .caption-area{
+                        display: block;
+                        font-size: 28px;
+                    }
+                }
+
+                .element-area{
+                    margin-left: $gutter;
+                    display: flex;
+                    flex-wrap: wrap;                        
+                    flex-basis: ($col*6) + ($gutter*5);
+
+                    .lang-item-box{
+                        width: ($col*3) + ($gutter*2);
+                        height: 150px;
+                        display: flex;
+
+                        .logo-area{
+                            width: $col;
+                        }
+
+                        .text-area{
+                            margin-left: $gutter;
+                            width: ($col*2) + $gutter;
+                            .lang-name{
+                                font-family: 'NG-Reg';    
+                                font-size: 16px;                                
+                            }
+
+                            .lang-detail{
+                                font-size: 16px;
+                            }                                
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+    .front-end-container .lang-name{        
+        color: rgb(154, 167, 255);            
+    }
+    .back-end-container .lang-name{
+        color: rgb(255, 69, 106);
+    }
+}
