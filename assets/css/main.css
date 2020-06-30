@@ -5,27 +5,51 @@
 
 .container{
     background-image: url("../img/background.png");
+    width: 100%;
     height: 100vh;
     overflow-y: hidden;
     font-family: 'Raleway','S-CoreDream-4Regular' , sans-serif;
     color:#ffffff;
 }
 
+.container .container-face-image-area{
+    position: absolute;
+    background-image: url('../img/face.png');
+    width: 100%;
+    height: 100%;    
+    z-index: 2 ;
+}
+
+.container .container-swipe-image-area{
+    position: absolute;
+    background-image: url('../img/swipe.png');
+    width: 100%;
+    height: 100%;    
+    z-index: 1 ;
+}
 
 .content-area{    
     display: flex;
     justify-content: center;    
-     
+    position: absolute;
+    width: 100%;
+    z-index: 5;    
+    margin-top: 60px;
 }
 
 .content-area div{
     width: 1200px;
 }
 
+
+
 .header-area{    
     background-color: #252526;
     display: flex;    
     justify-content: center;   
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 .header-content-area{    
@@ -34,6 +58,27 @@
     display: flex;    
     align-items: center;
     justify-content: space-between;
+}
+.header-content-area .menu-area{
+    height: 100%;
+}
+
+.header-content-area .menu-area nav{
+    height: 100%;
+}
+
+.header-content-area .menu-area nav ul, .header-content-area .menu-area nav ul li{
+    height: 100%;
+}
+.header-content-area .menu-area nav ul li a{
+    display: block;
+    height: 100%;
+}
+
+.header-content-area .menu-area nav ul li a span{
+    display: flex;    
+    align-items: center;
+    height: 59px;
 }
 
 .header-area .logo-text{
@@ -55,16 +100,24 @@
     color: #ffffff;
     padding-left: 40px;
     letter-spacing: 0px;
+    height: 100%;
 }
 
 .menu-area nav .menu-list li a:hover{
-    color: #00bbff;
+    color: #3192ff;
+    cursor: pointer;
 }
 
-.menu-area nav .menu-list li a:active span.menu-text-field{
-    color: #00bbff;
-    border-bottom : 2px solid #00bbff;
+.menu-area nav .menu-list li a:hover span.menu-text-field{
+    color: #3192ff;    
 }
+
+.menu-area nav .menu-list li a.active span.menu-text-field{
+    color: #3192ff;
+    border-bottom : 2px solid #3192ff;    
+}
+
+
 
 .footer-area{
     background-color: #252526;

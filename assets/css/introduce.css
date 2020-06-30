@@ -26,14 +26,18 @@
     position: relative;
 }
 
+.intro-container #sheet-1  {    
+    
+}
+
 .intro-container .button-area{
 
 }
 
 .intro-container .button-area .btn-download{
     padding: 20px 40px;
-    border : 1px solid #00bbff;
-    color : #00bbff;
+    border : 1px solid #3192ff;
+    color : #3192ff;
     font-size: 20px;
     font-family: 'S-CoreDream-4Regular';
 }
@@ -42,7 +46,7 @@
     padding: 20px 40px;    
     color : #fff;
     font-size: 20px;    
-    background: #00bbff;
+    background: #3192ff;
 }
 
 
@@ -107,5 +111,48 @@
 
 }
 
+.intro-container .reward-title-area{
+    padding-top: 130px;
+    margin-bottom: 84px;
+}
 
+.intro-container .reward-title-area .reward-title-text{
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 68px;    
+}
+
+.intro-container .reward-area .external-area, .intro-container .reward-area .internal-area{
+    width: 100%;
+}
+
+
+.intro-container .reward-area .reward-circle-display-area{
+    display: -webkit-inline-box;
+}
+.intro-container .reward-area .reward-circle-area{        
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #3192ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+.intro-container .reward-area .reward-list-area{
+
+}
+.intro-container .reward-area .reward-list-area li{           
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 20px;     
+}
+.intro-container .reward-area .reward-circle{
+    
+    font-family: 'S-CoreDream-5Medium'; 
+    font-size: 24px;
+    color :#3192ff;
+
+}
 

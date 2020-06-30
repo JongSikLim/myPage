@@ -1,0 +1,56 @@
+.portfolio-area{
+    font-size: 20px;
+}
+
+.portfolio-content-area{
+
+}
+
+.category-area{
+    
+}
+
+.portfolio-list-area{
+
+}
+
+.portfolio-list-area .portfoilo-card{
+    display: block;
+}
+
+.portfoilo-card .icon-area{    
+    display: inline-flex;
+    width: 100px;
+    align-items: center;
+    
+}
+
+.portfoilo-card .icon-area img{
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/logo-sample.png');
+} 
+
+.portfoilo-card .detail-area{
+    display: inline-block;
+    width: 1000px;
+}
+
+.portfoilo-card .project-title{
+    display: block;
+}
+
+.portfoilo-card .project-range{
+    display: block;
+
+}
+
+.portfoilo-card .project-explain{
+    display: block;
+
+}
+
+.portfoilo-card .project-language{
+    display: block;
+
+}

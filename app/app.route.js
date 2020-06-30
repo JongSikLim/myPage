@@ -1,17 +1,17 @@
 Portfolio.config(function ($stateProvider, $urlRouterProvider){    
-    $urlRouterProvider.otherwise('/introduce');
+    $urlRouterProvider.otherwise('/PROFILE');
 
     $stateProvider
-    .state('introduce', {
-        url: '/introduce',
+    .state('PROFILE', {
+        url: '/PROFILE',
         templateUrl: 'views/introduce.html'
     })
-    .state('portfolio', {
-        url: '/portfolio',
+    .state('PORTFOLIO', {
+        url: '/PORTFOLIO',
         templateUrl: 'views/portfolio.html'
     })
-    .state('blog', {
-        url: '/blog',        
+    .state('BLOG', {
+        url: '/BLOG',        
         templateUrl: 'views/blog.html'        
     })    
 });

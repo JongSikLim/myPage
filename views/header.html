@@ -6,9 +6,9 @@
         <div class="menu-area">
             <nav>
                 <ul class="menu-list">
-                    <li class="menu-text"><a><span class="menu-text-field">INTRODUCE</span></a></li>
-                    <li class="menu-text"><a><span class="menu-text-field">PORTFOLIO</span></a></li>
-                    <li class="menu-text"><a><span class="menu-text-field">BLOG</span></a></li>
+                    <li class="menu-text"><a ng-class="{active: state == 'PROFILE'}" ng-click="changeState('PROFILE')" ><span class="menu-text-field">PROFILE</span></a></li>
+                    <li class="menu-text"><a ng-class="{active: state == 'PORTFOLIO'}" ng-click="changeState('PORTFOLIO')" ><span class="menu-text-field">PORTFOLIO</span></a></li>
+                    <li class="menu-text"><a ng-class="{active: state == 'BLOG'}" ng-click="changeState('BLOG')" ><span class="menu-text-field">BLOG</span></a></li>
                 </ul>
             </nav>
         </div>

@@ -13,7 +13,9 @@
 
 </head>
 <body ng-app="Portfolio">
-    <div class="container" ng-controller="index">    
+    <div class="container" ng-controller="index">
+        <div class="container-face-image-area"></div>
+        <div class="container-swipe-image-area"></div>
         <div ng-include src="'views/header.html'"></div>
         <div class="content-area">
             <div ui-view></div>
@@ -38,3 +40,4 @@
     <script src="app/controller/footer.controller.js"></script>
 
 </html>
+
