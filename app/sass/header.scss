@@ -20,11 +20,15 @@ $content-width : ($col*8) + ($gutter*7);
 
         .menu-area{
             display: flex;
-
+            
             .menu{
                 font-size: 16px;
                 padding: 0 20px;
                 cursor: pointer;
+
+                a{
+                    color:#fff;
+                }
             }
         }
     }

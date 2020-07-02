@@ -1,11 +1,11 @@
-<div class="header-area">
+<div class="header-area" ng-controller="header">
     <div class="header-flex-container">
         <div class="logo-area">
             <img src="../assets/img/logo.png" class="logo-img">
         </div>
         <div class="menu-area ngl">
-            <div class="menu">소개</div>
-            <div class="menu">프로젝트</div>
+            <div class="menu" ng-click="scrollToAngular('introduce')">소개</div>
+            <div class="menu" ng-click="scrollToAngular('project')">프로젝트</div>
         </div>
     </div>
 </div>

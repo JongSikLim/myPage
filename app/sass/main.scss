@@ -28,3 +28,7 @@ $content-width : ($col*8) + ($gutter*7);
 .ngr{
     font-family: 'NG-Reg';
 }
+
+body{
+    scroll-behavior: smooth;
+}
