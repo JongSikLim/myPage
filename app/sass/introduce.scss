@@ -5,28 +5,42 @@ $content-width : ($col*8) + ($gutter*7);
 
 .introduce-area{
     width: $max-width;    
+    .graphic-area{
+        width: $max-width;    
+        position: absolute;
+        z-index: 1;        
+        display: flex;
+        justify-content: flex-end;
+    }
     hr.line{
         display: flex;
         width: $max-width;
+        border: 0;
+        border-top: 1px solid rgb(64,66,84);        
     }
     .welcome-flex-box{
         display: flex;
         width: $max-width;    
-        background: rgb(36,38,51);
+        background: rgb(36,38,51);        
         justify-content: center;
         
         .welcome-sheet-area{
+            z-index: 2;
             width: $content-width;
             height: 485px;
-            
-            .greeting-text{
-                display: flex;
-                font-size: 56px;
+            display:flex;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            .greeting-text{                
+                width: $content-width ;                
+                font-size: 56px;                
+                margin-bottom: 40px;
             }
             
-            .idea-text{
-                display: flex;
+            .idea-text{                
                 font-size: 28px;
+                line-height : 42px;
             }
         }
     }
