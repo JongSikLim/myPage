@@ -2,6 +2,12 @@ $gutter : 1.5625vw;
 $max-width : 100vw;
 $col : 6.90104166666667vw;
 $content-width : ($col*8) + ($gutter*7);
+$sheet-bg-color : rgb(50,52,69);
+$sheet-bg-color2 : rgb(36,38,51);
+$orange : rgb(255, 138, 86);
+$pink : rgb(255,69,106);
+$company-pf-color : rgb(78,127,226);
+$private-pf-color : rgb(118,210,213);
 
 .introduce-area{
     width: $max-width;    
@@ -14,9 +20,11 @@ $content-width : ($col*8) + ($gutter*7);
     }
     hr.line{
         display: flex;
-        width: $max-width;
-        border: 0;
-        border-top: 1px solid rgb(64,66,84);        
+        width: $max-width;        
+        height: 1px;
+        color: rgb(64,66,84);
+        background-color: rgb(64,66,84);
+        border: none;
     }
     .welcome-flex-box{
         display: flex;
@@ -53,7 +61,8 @@ $content-width : ($col*8) + ($gutter*7);
 
         .skill-sheet-area{
             width: $content-width;
-            padding: 100px 0;
+            padding-top: 100px;
+            padding-bottom: 50px;
 
             .subject-text{    
                 font-size: 56px;
@@ -83,6 +92,7 @@ $content-width : ($col*8) + ($gutter*7);
                     }
 
                     .caption-area{
+                        margin-top: 30px;
                         display: block;
                         font-size: 28px;
                     }
@@ -96,7 +106,8 @@ $content-width : ($col*8) + ($gutter*7);
 
                     .lang-item-box{
                         width: ($col*3) + ($gutter*2);
-                        height: 150px;
+                        // height: 150px;
+                        margin-bottom: 50px;
                         display: flex;
 
                         .logo-area{
@@ -108,11 +119,13 @@ $content-width : ($col*8) + ($gutter*7);
                             width: ($col*2) + $gutter;
                             .lang-name{
                                 font-family: 'NG-Reg';    
-                                font-size: 16px;                                
+                                font-size: 16px;      
+                                margin-bottom: 010px;                          
                             }
 
                             .lang-detail{
-                                font-size: 16px;
+                                font-size: 14px;
+                                line-height: 22px;
                             }                                
                         }
                     }
@@ -126,25 +139,25 @@ $content-width : ($col*8) + ($gutter*7);
         color: rgb(154, 167, 255);            
     }
     .back-end-container .lang-name{
-        color: rgb(255, 69, 106);
+        color: $pink;
     }
     .devops-container .lang-name{
-        color: rgb(250, 100, 69);
+        color: $orange;
     }
 
     .profile-flex-box{
         display: flex;
         width: $max-width;    
-        background: rgb(50,52,69);
+        background: $sheet-bg-color2;
         justify-content: center;
-        
+        padding-bottom: 100px;        
         .profile-sheet-area{
             width: $content-width;
-            height: 485px;
 
             .subject-text{    
                 font-size: 56px;
-                margin-bottom: 50px;
+                margin-top: 100px;
+                margin-bottom: 100px;
                 
                 .eng-text{
                     font-size: 28px;
@@ -167,31 +180,221 @@ $content-width : ($col*8) + ($gutter*7);
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    margin-left: $gutter;
                     .history-item-box{
-
+                        margin-bottom: 40px;
                         .history-title{
-
+                            font-family: "NG-Reg";
+                            font-size: 18px;                            
+                            color:rgb(43,132,213);
+                            margin-bottom: 6px;
                         }
                         .history-detail{
-
+                            font-size : 18px;
                         }
-                    }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }                    
                 }
 
                 .pride-area{
+                    margin-left: $gutter;
                     flex-basis: ($col*4) + ($gutter*3);
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
                     .pride-item-box{
+                        display : flex;
+                        margin-bottom: 24px;
 
                         .pride-icon-area{
-
+                            margin-right: 20px;                             
                         }
                         .pride-text-area{
+                            font-size : 18px;
+                            line-height: 30px;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    .reward-flex-box{
+        background: $sheet-bg-color2;
+        display: flex;
+        justify-content: center;
+        width: $max-width;    
+
+
+        .reward-sheet-area{
+            width: $content-width;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: flex;
+            
+            
+
+            .reward-area{
+                display: flex;
+                justify-content: center;                
+                flex-basis: ($col*4) + ($gutter*3);
+                
+                .reward-list-flex-box{
+                    .reward-type{
+                        font-size: 16px;
+                        color:rgb(43,132,213);
+                    }
+
+                    .reward-list-box{
+                        margin-top: 20px;
+
+                        .reward-item{
+                            margin-bottom: 6px;
+                            .reward-date{
+                                font-size: 16px;
+                            }
+                            .reward-title{
+                                font-size: 16px;
+                            }
+
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .portfolio-flex-box{
+        background: $sheet-bg-color;        
+        display: flex;
+        justify-content: center;
+        width: $max-width;
+        padding-bottom: 100px;
+        
+        &.private{
+            background-color: $sheet-bg-color2;
+        }
+
+        .portfolio-sheet-area{
+            width: $content-width;
+
+            .subject-text{    
+                font-size: 56px;
+                margin-top: 100px;                
+                
+                .eng-text{
+                    font-size: 28px;
+                }
+            }
+
+            .portfolio-area{
+                margin-top: 100px;
+
+                .label-area{
+                    font-family: 'NG-Reg';
+                    float:right;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: $col;
+                    height: $col;
+                    background-color: rgb(36,38,51);
+                    border-radius: 100%;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $company-pf-color;
+                    font-weight: 600;
+                    &.private{
+                        color: $private-pf-color;
+                        background-color: rgb(20,22,30);
+                    }
+
+                    .portfolio-type-label{
+                        display: flex;
+                        justify-content: center;                                                
+                    }
+
+                    
+                }
+
+
+                .portfolio-content-area{
+
+                    .pf-title{
+                        font-size: 56px;
+                        color:$company-pf-color;
+                        margin-bottom: 30px;
+
+                        &.private{
+                            color: $private-pf-color;
+                        }
+                    }
+                    .pf-range{
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    .pf-position{
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    .pf-lang{
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    .pf-explain{
+                        margin-top: 50px;
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-align : justify;
+                    }
+
+                    .pf-img-area{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 50px 0;
+                        img.pf-img{
+                            width: ($col*4) + ($gutter*3);
+                        }
+                    }
+
+                    .pf-feeling-point-area{
+                        border-radius: 10px;
+                        background-color: rgb(60,62,82);
+                        padding: 40px;
+
+                        
+
+                        .pf-feeling-point-content{
+
+                            .pf-feeling-point-title{
+                                font-size: 18px;
+                                line-height: 30px;
+                                color: rgb(78,127,226);
+                                margin-bottom: 6px;
+                            }
+                            .pf-feeling-point-detail{
+                                font-size: 18px;
+                                line-height: 28px;
+                                text-align : justify;
+                            }
+                        }
+
+                        &.private{                            
+                            background-color: rgb(44,46,61);
+                            
+                            .pf-feeling-point-title{
+                                color: $private-pf-color;
+                            }
                         }
                     }
                 }
