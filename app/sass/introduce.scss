@@ -114,4 +114,74 @@ $content-width : ($col*8) + ($gutter*7);
     .back-end-container .lang-name{
         color: rgb(255, 69, 106);
     }
+    .devops-container .lang-name{
+        color: rgb(250, 100, 69);
+    }
+
+    .profile-flex-box{
+        display: flex;
+        width: $max-width;    
+        background: rgb(50,52,69);
+        justify-content: center;
+        
+        .profile-sheet-area{
+            width: $content-width;
+            height: 485px;
+
+            .subject-text{    
+                font-size: 56px;
+                margin-bottom: 50px;
+                
+                .eng-text{
+                    font-size: 28px;
+                }
+            }
+            
+            .profile-content-box{
+                display: flex;
+
+                .img-area{
+                    flex-basis: ($col*2) + $gutter;
+
+                    img{
+                        width: 100%
+                    }
+                }
+
+                .history-area{
+                    flex-basis: ($col*2) + $gutter;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .history-item-box{
+
+                        .history-title{
+
+                        }
+                        .history-detail{
+
+                        }
+                    }
+                }
+
+                .pride-area{
+                    flex-basis: ($col*4) + ($gutter*3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .pride-item-box{
+
+                        .pride-icon-area{
+
+                        }
+                        .pride-text-area{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
