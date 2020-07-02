@@ -4,10 +4,13 @@ $col : 6.901041666666667vw;
 $content-width : ($col*8) + ($gutter*7);
 
 .header-area{
+    position: fixed;
     display: flex;
+    z-index: 100;
+    width: $max-width;
     justify-content: center;    
     background: rgb(50,52,69);
-
+    border-bottom: 1px solid rgb(64,66,84);
     .header-flex-container{
         display: flex;
         width: $content-width;

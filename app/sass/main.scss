@@ -17,6 +17,7 @@ $content-width : ($col*8) + ($gutter*7);
     color:#fff;
     .content-area{
         width: $max-width;
+        padding-top: 80px;
     }
 }
 
