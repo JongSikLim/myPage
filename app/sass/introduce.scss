@@ -9,8 +9,15 @@ $pink : rgb(255,69,106);
 $company-pf-color : rgb(78,127,226);
 $private-pf-color : rgb(118,210,213);
 
+$mb-col : 12.5vw;
+$mb-gutter : 2.777777777777778vw;
+$mb-margin : 5.55555555555556vw; 
+$mb-max-width : ($mb-col*6) + ($mb-gutter*5);
+
+
 .introduce-area{
-    width: $max-width;    
+    width: $max-width;
+    
     .graphic-area{
         width: $max-width;    
         position: absolute;
@@ -26,11 +33,15 @@ $private-pf-color : rgb(118,210,213);
         background-color: rgb(64,66,84);
         border: none;
     }
-    .welcome-flex-box{
+    .sheet-flex-box{
         display: flex;
         width: $max-width;    
+        justify-content: center;                    
+    }
+    .welcome-flex-box{
+        
         background: rgb(36,38,51);        
-        justify-content: center;
+        
         
         .welcome-sheet-area{
             z-index: 2;
@@ -356,6 +367,7 @@ $private-pf-color : rgb(118,210,213);
                         font-size: 18px;
                         line-height: 28px;
                         text-align : justify;
+                        -webkit-font-smoothing: antialiased;
                     }
 
                     .pf-img-area{
@@ -402,3 +414,4 @@ $private-pf-color : rgb(118,210,213);
         }
     }
 }
+
