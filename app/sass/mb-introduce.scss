@@ -19,6 +19,10 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
     .introduce-area{
         width: $max-width;
 
+        .graphic-area{
+            display:none;
+        }
+
         .sheet-flex-box{
             display: flex;
             width: $max-width;    
@@ -114,9 +118,146 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
                             }
                         }
                     }
+
+                    .mb-hr-line{
+                        display: flex;
+                        width: $max-width;        
+                        height: 1px;
+                        color: rgb(64,66,84);
+                        background-color: rgb(64,66,84);
+                        border: none;
+                    }
+
+                    .pride-area{
+                        margin-left: 0;
+                        flex-basis: $mb-content-width; 
+                        flex-wrap: wrap;
+                        .pride-item-box{
+                            .pride-icon-area{
+                                margin-right: $mb-gutter;
+                                flex-basis: ($mb-col*2) + ($mb-gutter);                                
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img{
+                                    
+                                }
+                            }
+                            .pride-text-area{                                
+                                flex-basis: ($mb-col*4) + ($mb-gutter*3)
+
+                            }
+                        }
+
+                    }
                 }
             }
         }
         
+        .reward-flex-box{
+            .reward-sheet-area{
+                flex-wrap: wrap;
+                .reward-area{
+                    flex-basis : $mb-content-width;
+                    justify-content: left;
+                    
+                    .reward-list-flex-box{
+                        // display: flex;
+
+                        .reward-type{
+
+                        }
+
+                        .reward-list-box{
+                            .reward-item{
+                                display: flex;
+                                justify-content: left;
+                                .reward-date{
+                                    margin-right: 20px;
+                                    min-width: 70px;
+                                }
+                                .reward-title{
+
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio-flex-box{
+            .portfolio-sheet-area{
+                .subject-text{
+                    .eng-text{
+
+                    }
+                }
+
+                .portfolio-area{
+                    .label-area{
+                        .label-box{
+                            .portfolio-type-label{
+
+                                &.label-project{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    .portfolio-content-area{
+                        display: flex;
+                        flex-wrap: wrap;
+                        
+                        .pf-title{
+                            order: 1;
+                            font-size: 20px;
+                        }
+
+                        .pf-basic-info-box{
+                            order: 2;
+                        }
+
+                        .pf-explain{
+                            order: 3;
+                        }
+    
+                        .pf-img-area{
+                            order: 5;
+                            flex-wrap: wrap;
+                            flex-basis: $mb-content-width;
+                            align-items: flex-start;
+                            margin-bottom: 0;
+
+                            img.pf-img{
+                                margin-bottom: 10px;
+                                flex-basis: $mb-content-width;
+                                // height: fit-conten;
+
+                                &:last-child{
+                                    margin-bottom: 0;
+                                    
+                                }
+                            }
+                            
+                            
+                        }
+
+
+                        .pf-feeling-point-area{
+                            order: 4;
+                            border-radius: 0;
+                            background-color: inherit;
+                            padding: 0;
+                            &.private{
+                                background-color: $sheet-bg-color2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

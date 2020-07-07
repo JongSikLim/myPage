@@ -209,6 +209,10 @@ $mb-max-width : ($mb-col*6) + ($mb-gutter*5);
                     }                    
                 }
 
+                .mb-hr-line{
+                    display: none;
+                }
+
                 .pride-area{
                     margin-left: $gutter;
                     flex-basis: ($col*4) + ($gutter*3);
@@ -350,18 +354,21 @@ $mb-max-width : ($mb-col*6) + ($mb-gutter*5);
                             color: $private-pf-color;
                         }
                     }
-                    .pf-range{
-                        font-size: 24px;
-                        line-height: 34px;
+                    .pf-basic-info-box{
+                        .pf-range{
+                            font-size: 24px;
+                            line-height: 34px;
+                        }
+                        .pf-position{
+                            font-size: 24px;
+                            line-height: 34px;
+                        }
+                        .pf-lang{
+                            font-size: 24px;
+                            line-height: 34px;
+                        }
                     }
-                    .pf-position{
-                        font-size: 24px;
-                        line-height: 34px;
-                    }
-                    .pf-lang{
-                        font-size: 24px;
-                        line-height: 34px;
-                    }
+                    
                     .pf-explain{
                         margin-top: 50px;
                         font-size: 18px;
