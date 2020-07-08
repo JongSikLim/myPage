@@ -28,11 +28,15 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
             
             .menu{
                 font-size: 16px;
-                padding: 0 20px;
+                padding: 20px 20px;
                 cursor: pointer;
 
                 a{
                     color:#fff;
+                }
+
+                &:hover{
+                    color: rgb(190,93,238);
                 }
             }
         }
