@@ -16,8 +16,12 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
 
 
 @media only screen and (max-width : 768px){
+    br{
+        display: none;
+    }
     .introduce-area{
         width: $max-width;
+        text-align: justify;
 
         .graphic-area{
             display:none;
@@ -33,16 +37,51 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
             }
         }
         
-        .welcome-sheet-area{
-
-            .idea-text{
-                width: ($mb-col*4) + ($mb-gutter*3);
+        .welcome-flex-box{
+            .welcome-sheet-area{                
+                align-items: flex-start;
+    
+                .welcome-text-flex-box{
+                    padding-top: 46px;
+                    
+                    .greeting-text{
+                        font-size:34px;
+                        margin-bottom: 18px;
+                    }
+                    .idea-text{
+                        font-size: 18px;
+                        width: $mb-content-width;
+                        line-height: normal;
+    
+                        span.new-line{
+                            display: block;
+                            margin-top: 8px;
+                        }
+                        span.hide-text{
+                            display: none;
+                        }
+                    }
+                }
+                
             }
         }
+
 
         .skill-flex-box{
 
             .skill-sheet-area{
+                padding-top: 46px;
+                padding-bottom: 0;
+
+                .subject-text{
+                    margin-top: 0;
+                    margin-bottom: 46px;
+                    font-size: 22px;    
+                    line-height: normal;                
+                    .eng-text{
+                        font-size: 22px;
+                    }
+                }
                 
                 .skill-box{
                     flex-wrap: wrap;
@@ -51,22 +90,26 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
                         flex-basis: ($mb-content-width);
 
                         .img-area{
-                            width: ($mb-col*2) + ($mb-gutter);
+                            width: ($mb-col*2) + ($mb-gutter);                            
                         }
 
                         .caption-area{
+                            margin-top: 10px;
                             align-self: center;
                             font-size : 20px
                         }
                     }
 
                     .element-area{
+                        padding-top: 36px;
                         margin-left: 0;
                         display: flex;
                         flex-wrap: wrap;
+                        margin-bottom: 0;
 
                         .lang-item-box{
                             width: $mb-content-width;
+                            margin-bottom: 36px;
 
                             .logo-area{
                                 width: 0;
@@ -74,7 +117,19 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
 
                             .text-area{
                                 margin-left: 0;
-                                width: $mb-content-width;
+                                width: $mb-content-width;                                                                
+
+                                .lang-name{                                    
+                                    font-size : 20px
+                                }
+                                .lang-detail{
+                                    font-size: 16px;
+                                    line-height: 24px;          
+                                }
+                            }
+
+                            &:last-child{
+                                margin-bottom: 46px;
                             }
                         }
                     }
@@ -83,17 +138,31 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
         }
 
         .profile-flex-box{
+            padding-bottom: 36px;
+
             .profile-sheet-area{
+                padding-top: 46px;                
+
+                .subject-text{
+                    font-size: 22px;
+                    margin-top: 0;
+                    margin-bottom: 36px;
+
+                    .eng-text{
+                        font-size: 22px;
+                    }
+                }
 
                 .profile-content-box{
                     flex-wrap: wrap;
                     justify-content: center;                    
-
+                    
                     .img-area{
                         width: ($mb-col*4) + ($mb-gutter*3);
                         display: flex;
                         justify-content: center;
-
+                        align-items: center;
+                        margin-bottom: 36px;
                         img{
                             width: ($mb-col*4) + ($mb-gutter*3);
                         }
@@ -106,15 +175,21 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: center;
+                            margin-bottom: 26px;
 
                             .history-title{
                                 flex-basis: 100%;
-                                // justify-self: center;
-                                text-align: center;
+                                font-size: 16px;                                                            
+                                text-align: center;                                
+                                margin-bottom: 8px;
                             }
-                            .history-detail{
+                            .history-detail{                                
                                 flex-basis: 100%;
                                 text-align: center;
+                            }
+
+                            &:last-child{
+                                margin-bottom: 36px;
                             }
                         }
                     }
@@ -134,18 +209,15 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
                         flex-wrap: wrap;
                         .pride-item-box{
                             .pride-icon-area{
-                                margin-right: $mb-gutter;
-                                flex-basis: ($mb-col*2) + ($mb-gutter);                                
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                                
                                 img{
                                     
                                 }
                             }
-                            .pride-text-area{                                
-                                flex-basis: ($mb-col*4) + ($mb-gutter*3)
-
+                            .pride-text-area{              
+                                font-size: 16px;
+                                line-height: 24px;          
+                                // flex-basis: ($mb-col*4) + ($mb-gutter*3)
                             }
                         }
 
@@ -156,28 +228,40 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
         
         .reward-flex-box{
             .reward-sheet-area{
+                padding-top: 36px;
+                padding-bottom: 46px;
+
                 flex-wrap: wrap;
                 .reward-area{
                     flex-basis : $mb-content-width;
                     justify-content: left;
                     
+                    &:last-child{
+                        margin-top: 36px;
+                    }
+
                     .reward-list-flex-box{
                         // display: flex;
 
                         .reward-type{
-
+                            font-size: 20px;
+                            font-family: 'NG-Reg';
                         }
 
                         .reward-list-box{
+                            margin-top: 10px;
                             .reward-item{
                                 display: flex;
                                 justify-content: left;
                                 .reward-date{
-                                    margin-right: 20px;
+                                    margin-right: 10px;
                                     min-width: 70px;
+                                    font-size: 14px;
+                                    line-height: 20px;
                                 }
                                 .reward-title{
-
+                                    font-size: 14px;
+                                    line-height: 20px;
                                 }                                
                             }
                         }
@@ -187,15 +271,30 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
         }
 
         .portfolio-flex-box{
+            padding-top: 46px;
+            padding-bottom: 46px;
+
             .portfolio-sheet-area{
                 .subject-text{
+                    margin-top: 0;
+                    margin-bottom: 46px;
+                    font-size: 22px;    
+                    line-height: normal;                
                     .eng-text{
-
+                        font-size: 22px;
                     }
                 }
 
                 .portfolio-area{
+                    margin-top: 0;
+
                     .label-area{
+                        display: none;
+                        width: $mb-col;
+                        height: $mb-col;
+                        font-size:16px;
+                        // color:#fff;                        
+
                         .label-box{
                             .portfolio-type-label{
 
@@ -212,23 +311,54 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
                         flex-wrap: wrap;
                         
                         .pf-title{
+                            flex-basis: $mb-content-width;
                             order: 1;
-                            font-size: 20px;
+                            font-size: 22px;
+                            margin-bottom: 20px;
                         }
 
                         .pf-basic-info-box{
                             order: 2;
+                            
+                            .pf-range{
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                            .pf-position{
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                            .pf-lang{
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                        }
+
+                        .mb-hr-line{
+                            order:3;                            
+                            display: flex;
+                            width: $max-width;        
+                            height: 1px;
+                            color: rgb(64,66,84);
+                            background-color: rgb(64,66,84);
+                            border: none;
+                            margin: 20px 0;
                         }
 
                         .pf-explain{
-                            order: 3;
+                            order: 4;
+                            margin-top: 0;
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 20px;
                         }
     
-                        .pf-img-area{
-                            order: 5;
+                        .pf-img-area{                            
+                            order: 6;
                             flex-wrap: wrap;
                             flex-basis: $mb-content-width;
                             align-items: flex-start;
+                            margin-top: 20px;
                             margin-bottom: 0;
 
                             img.pf-img{
@@ -247,12 +377,34 @@ $mb-content-width : ($mb-col*6) + ($mb-gutter*5);
 
 
                         .pf-feeling-point-area{
-                            order: 4;
+                            order: 5;
                             border-radius: 0;
                             background-color: inherit;
                             padding: 0;
+                            
+                            
+
+                            .pf-feeling-point-content{
+                                
+
+                                .pf-feeling-point-title{
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    color: rgb(78,127,226);
+                                    margin-bottom: 6px;
+                                }
+                                .pf-feeling-point-detail{
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                }
+                            }
+
                             &.private{
                                 background-color: $sheet-bg-color2;
+                                
+                                .pf-feeling-point-title{
+                                    color: $private-pf-color;
+                                }
                             }
                         }
                     }

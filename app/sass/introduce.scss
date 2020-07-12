@@ -128,10 +128,11 @@ $mb-max-width : ($mb-col*6) + ($mb-gutter*5);
                         .text-area{
                             margin-left: $gutter;
                             width: ($col*2) + $gutter;
+                            
                             .lang-name{
                                 font-family: 'NG-Reg';    
                                 font-size: 16px;      
-                                margin-bottom: 010px;                          
+                                margin-bottom: 10px;                          
                             }
 
                             .lang-detail{
